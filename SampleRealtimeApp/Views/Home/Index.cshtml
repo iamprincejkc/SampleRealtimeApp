@@ -1,0 +1,50 @@
+﻿
+
+<div class="content">
+    <h2>Products</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-12">
+            <table id="tblProducts" class="table table-bordered table-hover table-sm font-sm">
+                <colgroup>
+                    <col class="col-3"/>
+                    <col class="col-5"/>
+                    <col class="col-2"/>
+                    <col class="col-2"/>
+                </colgroup>             
+                <thead class="bg-primary text-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr class="align-top">
+                        <td>
+                            <input type="text" id="txtName" class="form-control"/>
+                        </td>
+                        <td>
+                            <textarea id="txtDescription" class="form-control"></textarea>
+                        </td>
+                        <td>
+                            <select id="ddStatus" class="form-control">
+                                <option value="A">Active</option>   
+                                <option value="I">Inactive</option>   
+                            </select>
+                        </td>                   
+                        <td>
+                            <button type="button" id="btnSave" class="btn btn-primary">Save</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/realtime.js" defer></script>
